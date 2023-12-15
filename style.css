@@ -1,0 +1,121 @@
+/* Globals and core elements */
+
+:root {
+    --header-color:#6cb1c0;
+    --back-color: #013824;
+    --header-back-color: var(--back-color);
+    --bubble-color: white;
+    --outer-bubble:#333;
+    --inner-bubble: #037e50;
+}
+
+body {
+    background-color: #1e344b;
+    font-family: verdana;
+}
+
+button {
+    background-color: black;
+    border-color: black;
+    border: solid;
+    transition-duration: 0.4s;
+    border: none;
+    float: right;
+  }
+  
+  button:hover {
+    background-color: white;
+    border-color: white;
+    color: black;
+  
+  }
+
+/* Header */
+
+ header {
+    background-color: var(--header-back-color);
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+
+img {
+    max-width: 15%;
+    max-height: 15%;
+    filter: invert(1)
+}
+
+ .settings-button {
+    background-color: var(--header-back-color);
+  }
+
+ .title {
+    color: var(--header-color);
+    text-align: left;
+  }
+
+ .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: var(--header-color);
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {opacity: 0;}
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+  
+  div {
+    border-radius: 15px;
+  }
+
+  main {
+    padding: 10px;
+    color: var(--bubble-color)
+  }
+
+  .header-container {
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: var(--outer-bubble);
+  }
+
+  .import-button {
+    color: white;
+    padding: 15px 25px;
+   }
+
+  .meeting-container {
+    background-color: var(--inner-bubble);
+    margin-left: 3%;
+    padding: 1px; /* I'm lost on why this is changing it so much */
+    margin-bottom: 5px;
+    padding-left: 1%;
+  } 
+  
+  .meeting-length {
+    float: right;
+  } 
+
+  .meeting-status {
+    float: right;
+  }
+
+  span {
+    padding-inline: 2%;
+  }

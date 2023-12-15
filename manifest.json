@@ -1,0 +1,13 @@
+{
+  "name": "Outlook Workplan Integrator",
+  "version": "0.1",
+  "manifest_version": 3,
+  "description": "Provides your calendar on the side panel to pull into your workplan.",
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "permissions": ["sidePanel", "contextMenus"]
+}
