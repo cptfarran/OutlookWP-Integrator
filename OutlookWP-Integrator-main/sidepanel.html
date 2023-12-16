@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./res/circle-loon.png">
+    <title>Outlook Integrator</title>
+    <audio id="loon-sound" src="./res/loon.wav" preload="auto"></audio>
+    
+</head>
+<body>
+    <header>
+        <img class="icon" src="./res/icon.png">
+        </img>
+        <h1 class="title">Outlook Integrator</h1>
+        <div class = "settings-button" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </header>
+    <main class="bubble">
+        <div class="header-container bubble" id="Epic Health System">
+            <h3>Epic Health System <button class="import-button "></button></h3>
+            <div class="meeting-container bubble">
+                <span class="meeting-name">TEST Weekly Meeting</span>
+                <span class="meeting-status">TEST GREEN</span>
+                <span class="meeting-length">T0.5</span>
+            </div>
+            <div class="meeting-container">
+                <span class="meeting-name">TEST Office Hours</span>
+                <span class="meeting-status">TEST RED</span>
+                <span class="meeting-length">T0.5</span>
+            </div>
+        </div>
+        <div class="header-container bubble">
+            <h3>Epic Clinic Network</h3>
+            <div class="meeting-container">
+                <span class="meeting-name">TEST Weekly Meeting</span>
+                <span class="meeting-status"></span>
+                <span class="meeting-length">0.5</span>
+            </div>
+            <div class="meeting-container">
+                <span class="meeting-name">TEST Investigate SLG 132</span>
+                <span class="meeting-status"></span>
+                <span class="meeting-length">0.5</span>
+            </div>
+        </div>
+        <div class="header-ender"></div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+<script src="main.js" defer></script>
+
+</html>
